@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navLink {
+        @apply hidden h-6 overflow-y-hidden cursor-pointer relative lg:flex lg:flex-col;
+    }
+
+    .linkText {
+        @apply transition-transform duration-500 w-full text-[1rem] font-neueMontreal font-normal;
+    }
+
+    .navUnderline {
+        @apply w-0 h-[1px] bg-zinc-900 transition-all absolute bottom-0 left-0;
+    }
+}
+
+@font-face {
+    font-family: "nueu-montreal";
+    src: url('./assets/fonts/NeueMontreal-Regular.otf');
+}
+
+@font-face {
+    font-family: "neue-montreal-light";
+    src: url('./assets/fonts/NeueMontreal-Light.otf');
+}
+
+@font-face {
+    font-family: "founders-grotesk";
+    src: url('./assets/fonts/FoundersGroteskXCond-Lt.otf');
+}
